@@ -75,7 +75,7 @@
         $alamat    = $_POST['alamat'];
         $kode_pos  = $_POST['kode_pos'];
 
-        mysqli_query($koneksi, "UPDATE tbl_mhs SET nama='$nama',tempat_lahir='$tempat_l',tanggal_lahir='$tanggal_l',jenis_kelamin='$jk',alamat='$alamat',kode_pos='$kode_pos'
+        mysqli_query($koneksi, "UPDATE tbl_mhs SET npm='$npm',nama='$nama',tempat_lahir='$tempat_l',tanggal_lahir='$tanggal_l',jenis_kelamin='$jk',alamat='$alamat',kode_pos='$kode_pos'
         WHERE npm='$id'") or die(mysqli_error($koneksi));
 
         echo "<div align='center'><h5>Data sedang di simpan, mohon tunggu...</h5></div>";
